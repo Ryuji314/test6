@@ -1,0 +1,121 @@
+*{box-sizing: border-box;}
+body {
+    padding: 0 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto 20%;
+    grid-template-rows: 80px 200px auto 200px 200px;
+    row-gap: 10px;
+}
+header {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: antiquewhite;
+}
+.screen-wrapper {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-color: aquamarine;
+    
+}
+.contents-box {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+.contents-list {
+}
+.contents_head {
+    height: 50px;
+    background-color: blueviolet;
+}
+.contents_head h1 {
+    margin: auto auto auto 10px;
+    line-height: 50px;
+    display: inline-block;
+    font-size: clamp(25px, 3vw, 40px);
+    font-family:'Bangers', cursive;;
+}
+.contents_center {
+    height: 360px;
+    background-color: azure;
+    display: flex;
+}
+.content-box {
+    width: 25%;
+    border: 1px solid pink;
+    padding: 10px 0 3px;
+    height: 360px;
+}
+.content_head {
+    height: 30px;
+    text-align: center;
+}
+.content_head h3 {
+    margin: 0%;
+}
+.content_image {
+    height: 230px;
+    width:100%;
+    border: 1px solid pink;
+}
+.content_botton {
+    display: flex;
+    height: 50px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.content_botton p {
+    margin: 0;
+    font-size: 10px;
+}
+.result {
+    width: 70%;
+}
+.time {
+    width: 30%;
+    text-align: right;
+}
+.content-box a {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+}
+.content_btn {
+    background-color: red;
+    box-shadow: 0 3px rgb(213, 12, 12);
+    transition: all .5s;
+    opacity: 0.8;
+    border-radius: 4px;
+    color: aliceblue;
+}
+.content_btn:hover {
+    box-shadow: none;
+    position: relative;
+    top: 3px;
+    opacity: 1;
+} 
+
+.contents_botton {
+    height: 50px;
+    background-color: bisque;
+}
+
+
+.silde-wrapper {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background: red;
+}
+.message-wrapper {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    background-color: aqua;
+}
+footer {
+    grid-column: 1/3;
+    grid-row: 5/6;
+}

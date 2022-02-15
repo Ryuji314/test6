@@ -1,0 +1,27 @@
+@media(max-width:500px) {
+    body {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 200px auto 150px 200px 80px
+    }
+    header {
+        grid-row: 1/2;
+    }
+    .screeb-wrapper {
+        grid-row: 2/3;
+    }
+    .contents-box {
+        grid-row: 3/4;   
+    }
+
+    .silde-wrapper{
+        grid-row: 4/5;
+        grid-column: auto;
+    }
+    .message-wrapper {
+        grid-row: 5/6;
+    }
+    footer {
+        grid-row: 6/7;
+    }
+}
